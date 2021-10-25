@@ -1,3 +1,4 @@
+# commit from CT
 def palindrome(Str):
     list_fwd = []
     list_rws = []
