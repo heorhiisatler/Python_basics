@@ -3,7 +3,7 @@ def mid(Str):
     list = []
     for s in Str:
         list.append(s)
-        i = i + 1     
+        i = i + 1
     print(list)
     if (i % 2) == 0:
         return ""

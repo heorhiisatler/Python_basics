@@ -1,5 +1,6 @@
 ip_Addr = ["192.168.5.248", "192.168.1.22", "192.168.5.247"]
 
+
 def http_error(status):
     match status:
         case 400:
@@ -11,5 +12,6 @@ def http_error(status):
         case _:
             return "Something's wrong with the internet"
 
+
 status = int(input("Enter status:"))
-print (http_error(status))
+print(http_error(status))

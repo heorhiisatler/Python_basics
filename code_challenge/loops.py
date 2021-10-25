@@ -6,7 +6,5 @@ while True:
     while True:
         if y > int(x):
             break
-        print (y)
+        print(y)
         y = y + 1
-
-        

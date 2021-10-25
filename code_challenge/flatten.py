@@ -6,4 +6,4 @@ def flatten(Lst_x2):
     return Lst_x1
 
 
-print(flatten([ [1, 2], [3, 4] ]))
+print(flatten([[1, 2], [3, 4]]))

@@ -2,10 +2,14 @@ def add_dots(Str):
     Str2 = ""
     i = 0
     for s in Str:
-        if i < (len(Str)-1): Str2 = Str2 + s + "."
+        if i < (len(Str)-1):
+            Str2 = Str2 + s + "."
         i = i + 1
-    else: Str2 = Str2 + s
+    else:
+        Str2 = Str2 + s
     return Str2
+
+
 def remove_dots(Str):
     Str3 = ""
     for s in Str:

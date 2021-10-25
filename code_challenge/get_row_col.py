@@ -20,14 +20,8 @@ def get_row_col(Str1):
             return (2, 2)
 
 
-
-
-
-
-
-
-
 while True:
     s1 = input("enter string: ")
-    if s1 == "q" or s1 == "quit": break
+    if s1 == "q" or s1 == "quit":
+        break
     print(get_row_col(s1))
