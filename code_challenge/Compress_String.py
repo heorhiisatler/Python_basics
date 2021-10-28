@@ -1,14 +1,14 @@
 # Compress String
 def Compress_String(Str):
     list = []
-    i = 0
+    i = 1
     for s in Str:
-        if Str[i]list.append(s)
+        if Str[i] == Str[i-1]:
+            list.append(s)
+        else:
+            break
+        i += 1
+    print(list)
 
 
-
-
-
-
-s1 = input("enter string: ")
-print(double_letters(s1)
+Compress_String("aaabbbccc")
