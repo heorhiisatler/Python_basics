@@ -1,17 +1,23 @@
-ip_Addr = ["192.168.5.248", "192.168.1.22", "192.168.5.247"]
+def benchmark(func):
+    import time
+    
+    def wrapper():
+        start = time.time()
+        func()
+        end = time.time()
+        print('[*] Время выполнения: {} секунд.'.format(end-start))
+    return wrapper
 
+@benchmark
+def fetch_webpage():
+    import requests
+    webpage = requests.get('https://google.com')
 
-def http_error(status):
-    match status:
-        case 400:
-            return "Bad request"
-        case 404:
-            return "Not found"
-        case 418:
-            return "I'm a teapot"
-        case _:
-            return "Something's wrong with the internet"
+fetch_webpage()
+print(fetch_webpage)
 
-
-status = int(input("Enter status:"))
-print(http_error(status))
+db.createUser({
+   user : "heorhii",
+   pwd : "12345",
+   roles : ["readWrite", "dbAdmin"]
+});

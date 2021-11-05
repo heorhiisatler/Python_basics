@@ -1,10 +1,5 @@
 def rev_str(Str):
-    Str_rev = ""
-    i = len(Str) - 1
-    while (i >= 0):
-        Str_rev += Str[i]
-        i -= 1
-    return(Str_rev)
+    return Str[::-1]
 
 
 s1 = input("enter string: ")
