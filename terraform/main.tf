@@ -19,7 +19,7 @@ variable "ssh_key" {
 }
 
 resource "proxmox_vm_qemu" "proxmox_vm" {
-  count             = 2
+  count             = 1
   name              = "ubuntu-vm-${count.index}"
   target_node       = "pve2"
   clone             = "ubuntu-cloud-init"
