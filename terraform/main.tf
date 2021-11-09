@@ -10,8 +10,6 @@ terraform {
 provider "proxmox" {
     pm_api_url = "https://192.168.5.251:8006/api2/json"
     pm_tls_insecure = true
-    #pm_api_token_id = "tf_user@pve!terraform"
-    #pm_api_token_secret  = "585dfaad-f6f3-4c75-acbc-5820a7fa4ea8"
     pm_api_token_id = var.pm_api_token_id
     pm_api_token_secret = var.pm_api_token_secret
 
@@ -27,7 +25,7 @@ variable "pm_api_token_secret" {}
 
 
 resource "proxmox_vm_qemu" "proxmox_vm" {
-  count             = 1
+  count             = 2
   name              = "ubuntu-vm-${count.index}"
   target_node       = "pve2"
   clone             = "ubuntu-cloud-init"
