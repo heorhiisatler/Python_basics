@@ -1,0 +1,6 @@
+version: '3'
+services:
+  tomcat:
+    image: customimage_1
+    ports: 
+     - 9080:8080
